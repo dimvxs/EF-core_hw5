@@ -5367,11 +5367,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dima\\Desktop\\28.02.2025\\Migrations_hw\\Migrations_hw\\Migrations_hw.csproj",
+      "projectUniqueName": "C:\\Mac\\Home\\Desktop\\Migrations_hw\\Migrations_hw\\Migrations_hw.csproj",
       "projectName": "Migrations_hw",
-      "projectPath": "C:\\Users\\dima\\Desktop\\28.02.2025\\Migrations_hw\\Migrations_hw\\Migrations_hw.csproj",
+      "projectPath": "C:\\Mac\\Home\\Desktop\\Migrations_hw\\Migrations_hw\\Migrations_hw.csproj",
       "packagesPath": "C:\\Users\\dima\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dima\\Desktop\\28.02.2025\\Migrations_hw\\Migrations_hw\\obj\\",
+      "outputPath": "C:\\Mac\\Home\\Desktop\\Migrations_hw\\Migrations_hw\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

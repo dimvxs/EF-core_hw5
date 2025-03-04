@@ -19,6 +19,11 @@ namespace Migrations_hw
         public DbSet<GroupsLectures> GroupsLectures { get; set; }
         public DbSet<Departments> Departments { get; set; }
         public DbSet<GroupsCurators> GroupsCurators { get; set; }
+        public DbSet<Heads> Heads { get; set; }
+        public DbSet<Assistants> Assistants { get; set; }
+        public DbSet<Deans> Deans { get; set; }
+        public DbSet<Shedules> Shedules { get; set; }
+        public DbSet<LectureRoom> LectureRooms { get; set; }
 
 
         static DbContextOptions<UniversityContext> _options;
@@ -89,11 +94,41 @@ namespace Migrations_hw
                 .HasOne(gc => gc.Curator)
                 .WithMany(c => c.GroupsCurators)
                 .HasForeignKey(gc => gc.CuratorId);
+
+            modelBuilder.Entity<Deans>()
+                .HasOne(t => t.Teacher)
+                .WithOne(d => d.Deans)
+                .HasForeignKey<Deans>(t => t.TeacherId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // ✅ Один LectureRoom содержит много Schedule
+            modelBuilder.Entity<Shedules>()
+                .HasOne(s => s.LectureRoom)
+                .WithMany(lr => lr.Shedules)
+                .HasForeignKey(s => s.LectureRoomId)
+                .OnDelete(DeleteBehavior.Restrict); // Запрещаем удаление, если есть связанные расписания
+        
+
+        // Один-ко-многим: Teacher ↔ Assistants
+        modelBuilder.Entity<Assistants>()
+                .HasOne(a => a.Teacher)
+                .WithMany(t => t.Assistants)
+                .HasForeignKey(a => a.TeachersId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            //  Один LectureRoom содержит много Schedule
+            modelBuilder.Entity<Shedules>()
+                .HasOne(s => s.LectureRoom)
+                .WithMany(lr => lr.Shedules)
+                .HasForeignKey(s => s.LectureRoomId)
+                .OnDelete(DeleteBehavior.Restrict); // Запрещаем удаление, если есть связанные расписания
         }
+
+
+    }
 
 
 
 
     }
-}
 

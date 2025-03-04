@@ -13,6 +13,8 @@ namespace Migrations_hw
         public int? Salary { get; set;}
         public string Surname { get; set;}
         public List<Lectures> Lectures { get; set; } = new List<Lectures>();
+        public Deans Deans { get; set; }
+        public List<Assistants> Assistants { get; set; } = new List<Assistants>();
 
         public Teachers()
         { }

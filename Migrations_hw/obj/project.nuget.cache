@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U8rb51t0dj0=",
+  "dgSpecHash": "S1k6lm8qTJw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dima\\Desktop\\28.02.2025\\Migrations_hw\\Migrations_hw\\Migrations_hw.csproj",
+  "projectFilePath": "C:\\Mac\\Home\\Desktop\\Migrations_hw\\Migrations_hw\\Migrations_hw.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dima\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dima\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

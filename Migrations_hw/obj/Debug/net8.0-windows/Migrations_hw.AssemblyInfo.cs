@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Migrations_hw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b4e9cb954f34616ae9e7e00b3c2a432e55a7cdf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Migrations_hw")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Migrations_hw")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
